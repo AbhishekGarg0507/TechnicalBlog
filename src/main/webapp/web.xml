@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://xmlns.jcp.org/sml/ns/javaee"
+		 version="3.1">
+	<servlet>
+        <servlet-name>AddPostServlet</servlet-name>
+        <servlet-class>com.tech.blog.servlets.AddPostServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPostServlet</servlet-name>
+        <url-pattern>/AddPostServlet</url-pattern>
+    </servlet-mapping>
+    
+	<session-config>
+		<session-timeout>
+			30
+		</session-timeout>
+	</session-config>
+	
+</web-app>
